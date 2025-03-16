@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SCClouds Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous" defer></script>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Pergunta 1 sobre camadas da OSI -->
+    <div class="card mb-3">
+      <div class="card-body">
+        <h3 class="card-title">Camadas 2 e 3 do Modelo OSI: Diferenças e Protocolos de Endereçamento</h3>
+        
+        <p class="card-text">O modelo OSI (Open Systems Interconnection) define as camadas que mantém a estrutura entre sistemas em uma rede, para que as transmissões de dados entre o emissor e o receptor sejam padronizadas. A seguir irei detalhar um pouco sobre as camadas 2 e 3.</p>
+
+        <div class="card-group">
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Camada 2 - Enlace ou ligação</h5>
+              <p class="card-text">Basicamente, esta camada verifica se as requisições têm algum defeito, controlando os erros com que frequências são enviados, ajudando para que as camadas superiores possam fazer uma transmissão praticamente sem erros e de forma mais confiável.</p>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Camada 3 - Rede</h5>
+              <p class="card-text">Ela é a camada que mantém a comunicação entre os emissores e receptores, controlando como os dados são transferidos e garantindo que cheguem ao destino da melhor forma possível.</p>
+            </div>
+          </div>
+          
+        </div>
+      
+        <p class="card-text">Enquanto a camada de enlace trabalha com endereço MAC (este endereço é unico para cada dispositivo) e conecta dispositivos da mesma rede, a camada da rede conecta dispositivos de redes diferentes trabalhando com endereços de IP(este endereço é mantido, para anotar a origem e o destino da requisição).<br>
+        A camada 2 utiliza protocolos como o Ethernet (IEEE 802.3), muito comum entre redes cabeadas, WIFI (IEEE 802.11) padrão de redes sem fio e HDLC, comum em comunicações WAN. Já a camada 3 utiliza alguns como o IPv4, versão mais antiga mas ainda amplamente utilizada e o IPv6, sucessor do IPv4 pois suporta um número bem maior de endereços. </p>
+
+      </div>
+    </div>
+    
+    <div class="card mb-3">
+      <div class="card-body">
+        <h3 class="card-title">Soluções Proprietárias vs. Open Source</h3>
+        <p class="card-text">
+          Ambas são boas opções mas com diferentes pros e contras:<br>
+          Enquanto soluções proprietárias como o Windows contam com um suporte oficial de uma empresa e suas parceiras, uma maior popularidade e uma maior compatibilidade com softwares populáres, já que muitos ainda não fazem uma versão para o "concorrente", ele oferece desvantagens como maior concetração de ataques te malwares (devido a maior popularidade), falta de flexibilidade no sistema já que seu código fonte "não pode" ser alterado e um custo elevado.<br>
+          Soluções Open Source como o Ubuntu, Debian e outros sistemas operacionais baseados em Linux oferecem uma maior liberdade, você pode fazer praticamente o que quiser no sistema, inclusive fazer ele parar de funcionar, o seu uso é gratuito e por ser menos popular tem uma faixa menor de malwares dedicados a ele, suas desvantagens são a maior curva de aprendizado, já que muitas coisas precisam de um conhecimento técnico maior para a utilização de alguns recursos, seu suporte pode ser mais dificil de encontrar, já que ele não tem uma empresa responsável para isso, dependendo de foruns e videos no YT, e conseguir fazer com que alguns aplicativos populares rodem no sistema pode ser um problema, já que as empresas focam mais em produzir para os sistemas mais populares como o Windows. 
+        </p>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <h3 class="card-title">Open Source o que é?</h3>
+        <p class="card-text">
+          Open Source significa código aberto, ou seja, o código-fonte de um software está disponível publicamente, permitindo que qualquer pessoa possa sugerir alterações, melhorias ou até mesmo propor mudanças no projeto. Exemplos conhecidos de software open source incluem o OpenJDK (uma distribuição open source do Java) e o Linux (um kernel de código aberto amplamente utilizado em sistemas operacionais e sistemas embarcados).<br>
+          Muitas grandes empresas, como Google, Microsoft e Red Hat, contribuem para projetos open source, seja com recursos financeiros ou contratando desenvolvedores para se dedicarem exclusivamente à melhoria dessas soluções de código aberto. Esse apoio pode resultar em suporte mais robusto, estabilidade aprimorada e novos recursos para o software. Empresas como a Red Hat, por exemplo, oferecem um sistema baseado no Linux, mas cobram pelo suporte e pela garantia de seus produtos, garantindo assim a continuidade e estabilidade da solução, mas com custos adicionais para os usuários.<br>
+          Porém, uma desvantagem desse modelo é que as empresas podem tentar direcionar o desenvolvimento do software open source para atender a suas próprias necessidades comerciais, o que pode, em certos casos, atrapalhar o desenvolvimento natural e a evolução do projeto, afastando-o de seu propósito original ou dos interesses da comunidade.  
+        </p>
+      </div>
+    </div>
+
+    <div class="card-group">
+      <!-- 1 -->
+      <div class="card">
+        <img src="assets/fibonacci.png" class="card-img-top" alt="Imagem que representa a sequência de fibonacci.">
+        <div class="card-body">
+          <h5 class="card-title">Sequência de fibonacci</h5>
+          <p class="card-text">
+            Olá, aqui eu estou fazendo uma requisição http: onde você escolhe o número equivalente a n para obter a posição n da sequêcnia de fibonacci, você pode escolher que este número seja calculado de maneira linear ou que seja calculado de forma recursiva utilizando cachês (sem o uso de cachês o sistema demora muito tempo para calcular numeros grandes, além de consumir um processamento desnecessário)
+          </p>
+          <!-- formulario com o botão que irá chamar a função; -->
+          <div class="input-group flex-nowrap">
+            
+            <select class="form-select" aria-label="Default select example" id="modoDeCalculoFibonacci">
+              <option selected>Modo de calculo</option>
+              <option value="Linear">Linear</option>
+              <option value="Recursive">Recursiva</option>
+            </select>
+            
+            <input type="number" class="form-control" placeholder="n" aria-label="" aria-describedby="addon-wrapping" id="nFibonacci">
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" onclick="calcularFibonacci()">Calcular</button>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">n</th>
+                <th scope="col">Fibonacci(n)</th>
+                <th scope="col">Modo de calculo</th>
+              </tr>
+            </thead>
+            <tbody id="table-fibonacci">
+              
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
+      <!-- 2 -->
+      <div class="card">
+        <img src="assets/primes.jpg" class="card-img-top" alt="Imagem da sequencia de fibonacci">
+        <div class="card-body">
+          <h5 class="card-title">Sequência de fibonacci</h5>
+          <p class="card-text">
+            Olá! Aqui também estou fazendo uma requisição http, mas desta vez eu tenho como resposta os números primos até n, também pode ser escolhido o calculo de maneira linear e recursiva, nessa função apesar de não afetar de maneira significante o desempenho como na equação de fibonacci eu também fiz o uso de cachê para calcular, apenas para poupar processamento.
+          </p>
+          <!-- formulario com o botão que irá chamar a função; -->
+          <div class="input-group flex-nowrap">
+            
+            <select class="form-select" aria-label="Default select example" id="modoDeCalculoPrimos">
+              <option selected>Modo de calculo</option>
+              <option value="Linear">Linear</option>
+              <option value="Recursive">Recursiva</option>
+            </select>
+            
+            <input type="number" class="form-control" placeholder="n" aria-label="" aria-describedby="addon-wrapping" id="nPrimos">
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" onclick="calcularPrimos()">Calcular</button>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">n</th>
+                <th scope="col">primos até n</th>
+                <th scope="col">Modo de calculo</th>
+              </tr>
+            </thead>
+            <tbody id="table-primes">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+    </div>
+
+  </body>
+</html>
