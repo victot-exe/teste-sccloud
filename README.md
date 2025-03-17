@@ -5,8 +5,8 @@ Olá!
 
 
 ### 1ª Maneira
-**A maneira mais simples de rodar este projeto é através do docker, você precisa ter o docker e o docker-compose devidamente instalados e configurados**
-**Importante ter as porta 8081 e a 8082 livres no seu computador para que a aplicação funcione corretamente**
+**A maneira mais simples de rodar este projeto é através do docker, você precisa ter o docker e o docker-compose devidamente instalados e configurados;**  
+**Importante**: ter a porta 8081 e a 8082 livres no seu computador para que a aplicação funcione corretamente;
 1. Abra o terminal da raiz do projeto e digite:
 ~~~bash
 docker-compose build
