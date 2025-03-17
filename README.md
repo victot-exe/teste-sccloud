@@ -1,7 +1,15 @@
 # teste-sccloud
 
 Olá!  
+Este é um repositório com o teste técnico da SC Cloud resolvido por mim :)
+
 ## Requisitos para rodar o projeto
+
+1. Faça o clone deste repositório:  
+_Precisa ter o git instalado no computador para que o comando execute_
+~~~bash
+git clone https://github.com/victot-exe/teste-sccloud.git
+~~~
 
 
 ### 1ª Maneira
