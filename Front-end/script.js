@@ -14,7 +14,7 @@ function calcularFibonacci() {
         return;
     }
 
-    let url = "http://localhost:8080/fibonacci?n=" + nFibonacci + "&type=" + modoCalculo.toUpperCase();
+    let url = "http://localhost:8081/fibonacci?n=" + nFibonacci + "&type=" + modoCalculo.toUpperCase();
 
     
     fetch(url)
@@ -54,7 +54,7 @@ function calcularPrimos(){
     let nPrimos = document.getElementById('nPrimos').value;
     let modoCalculo = document.getElementById('modoDeCalculoPrimos').value;
 
-    let url = "http://localhost:8080/prime-numbers?n=" + nPrimos + "&type=" + modoCalculo.toUpperCase();
+    let url = "http://localhost:8081/prime-numbers?n=" + nPrimos + "&type=" + modoCalculo.toUpperCase();
 
     if(nPrimos == "" || nPrimos === null ||nPrimos < 2){
         alert("Insira um valor válido (n > 1)");

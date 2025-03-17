@@ -1,0 +1,11 @@
+# Usa a imagem do Nginx
+FROM nginx:alpine
+
+# Copia os arquivos da sua aplicação para a pasta padrão do Nginx
+COPY . /usr/share/nginx/html
+
+# Expõe a porta 5173
+EXPOSE 80
+
+# Inicia o Nginx
+CMD ["nginx", "-g", "daemon off;"]
